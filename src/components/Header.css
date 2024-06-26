@@ -1,11 +1,10 @@
 /*Header.css*/
 
-/*
 @font-face {
-    src: url("../assets/yellowtail-regular.woff") format("woff");
-    font-family: "Yellowtail";
+    src: url("../assets/fonts/CabinetGrotesk-Bold.woff") format("woff");
+    font-family: "CabinetGrotesk";
 }
-*/
+
 .header {
     display: flex;
     align-items: center;
@@ -20,6 +19,8 @@
 
 .header__username{
     margin: 0;
+    font-family: "CabinetGrotesk";
+    font-weight: 700;
 }
 
 .header__logo {
@@ -35,8 +36,13 @@
 
 .header__date-location {
     margin: 0;
+    font-size: 20px;
+    font-family: "CabinetGrotesk";
+    font-weight: 700;
 }
 
 .header__add-close-btn{
     margin: 0 20px 0 auto;
+    font-family: "CabinetGrotesk";
+    font-weight: 700;
 }
