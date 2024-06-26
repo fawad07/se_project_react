@@ -1,0 +1,22 @@
+SETTING UP PROJECT
+1. Goto Dir
+2. open terminal in dir
+3. run:	npm create vite@5 [project-name]
+	Choose React and JavaScript
+4. cd in [ project-name ] dir
+	run:	npm install
+5. open package.json file and in scripts add --open in dev
+6. goto scripts: {	dev:	"vite --open"	}
+7. goto vite.config file
+8. enter the following after plugin:  [ react() ]
+	server: {	port: 3000, },
+9. goto terminal
+10. git init
+11. git add -A
+12. git commit -m "initial commit with config"
+13. open eslintrc.cjs
+14. add the following inside rules: { ... },
+15. "react/prop-types": 0,
+
+16. entry point main.jsx, inside <React.strictMode> <App/> </React.StrictMode>
+17. most work done inside App.jsx, inside the funtion App() { ..... return ( <> ....... </> ) }
