@@ -1,6 +1,6 @@
 //Header.jsx
-import headerLogo from '../assets/logo.svg';
-import headerAvatar from '../assets/avatar.png';
+import headerLogo from '../assets/images/logo.svg';
+import headerAvatar from '../assets/images/avatar.png';
 import './Header.css';
 
 

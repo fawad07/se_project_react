@@ -9,7 +9,8 @@ function App() {
     <>
     <div className="page"> 
       <div className="page_content">
-        <Header></Header>      
+        <Header></Header>
+        <Main></Main>
        </div>    
     </div>
     </>

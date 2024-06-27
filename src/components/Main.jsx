@@ -1,13 +1,18 @@
 //Main.jsx
 import './Main.css';
+import WeatherCard from './WeatherCard.jsx';
 
 
 function Main() {
     return (
-        <div className="container">
-            <p>This is your first Vite project </p>
-            <p>"Vite" means "quick" in French</p>
-        </div>
+        <main>
+            <WeatherCard></WeatherCard>
+            <section className="cards">
+                <p className="cards__text">Today is 75 &deg; F / You want to wear:</p>
+                {/**TODO: ADD CARDS */}
+            </section>
+
+        </main>
     );
 };
 
