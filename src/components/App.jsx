@@ -12,6 +12,10 @@ const addButtonClick = () => {
   setActiveModal("Add-Garment");
 }
 
+const closeActiveModal = () => {
+  setActiveModal( " " );
+}
+
   return (
     <>
     <div className="page"> 
@@ -22,7 +26,8 @@ const addButtonClick = () => {
        <ModalWithForm 
              titleText="New Garment" 
              buttonText="Add Garment" 
-             activeModal={activeModal}>        
+             activeModal={activeModal}
+             onModalCloseButtonClick = { closeActiveModal }>        
        <label htmlFor="name" className="modal__label">Name {" "}
                     <input
                         type="text" 
