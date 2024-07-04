@@ -11,7 +11,7 @@
     padding: 32px 40px 28px 40px;
 }
 
-.header__user-contaier{
+.header__user-container{
     display: flex;
     align-items: center;
     gap: 12px;

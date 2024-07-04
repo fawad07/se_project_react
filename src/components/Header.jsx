@@ -4,15 +4,17 @@ import headerAvatar from '../assets/images/avatar.png';
 import './Header.css';
 
 
-function Header() {
+function Header( {onAddButtonClick}) {
     return (
         <header className="header">
             <img className="header__logo"
                     src={headerLogo} 
                     alt="App logo" />
             <p className="header__date-location"> Date / Location</p>
-            <button className="header__add-close-btn">+ add/close btn</button>
-            <div className="header__user-contaier">
+            <button type="button"
+                          className="header__add-close-btn"
+                          onClick={onAddButtonClick  }>+ add/close btn</button>
+            <div className="header__user-container">
                 <p className="header__username">Place holder</p>
                 <img src={headerAvatar} 
                         alt="user name" 
