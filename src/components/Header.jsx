@@ -13,7 +13,7 @@ function Header( {onAddButtonClick}) {
             <p className="header__date-location"> Date / Location</p>
             <button type="button"
                           className="header__add-close-btn"
-                          onClick={onAddButtonClick  }>+ add/close btn</button>
+                          onClick={onAddButtonClick  }>+ Add clothes</button>
             <div className="header__user-container">
                 <p className="header__username">Place holder</p>
                 <img src={headerAvatar} 
