@@ -8,7 +8,7 @@ function ModalWithForm ({ children, buttonText, titleText, activeModal, onModalC
             <h2 className="modal__title">{ titleText }</h2>
             <button type="button"
                          className="modal__close"
-                         onClick={ onModalCloseButtonClick }>CLOSE</button>
+                         onClick={ onModalCloseButtonClick }></button>
             <form className="modal__form">
                 {children}
                 <button className="modal__submit" 

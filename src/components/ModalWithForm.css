@@ -1,13 +1,17 @@
 .modal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: fixed;
+    padding: 0 19px;
     top: 0;
     left: 0;
     right: 0;
-    left: 0;
+    bottom: 0;
     background-color: #0000004d ;
-    display: flex;
-    align-items: center;    
     visibility: hidden;
+    /*opacity: 1;
+    transition: visibility 0.25s, opacity 0.25s linear; */
 }
 
 .modal_opened {
@@ -15,16 +19,17 @@
 }
 
 .modal__content {
+    position: relative;
     max-width: 496px;
     width: 100%;
     box-sizing: border-box;
     background-color: #FFFFFF;
-    position: relative;
+    border-radius: 12px;
     padding: 28px 28px 36px;
 }
 
 .modal__title {
-    margin: 0;
+    margin: 0 0 24px;
     font-family: Cabinet Grotesk;
     font-size: 16px;
     font-weight: 700;
@@ -36,13 +41,30 @@
     position: absolute;
     top: 20px;
     right: 28px;
+    padding: 0;
+    height: 20px;
+    width: 20px;
+    border: none;
+    background-image: url("../assets/images/close-button.svg");
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.modal__close:hover {
+    transform: scale(1.5);
 }
 
 .modal__form {
     display: flex;
     flex-direction: column;
     width: 100%;
+    font-family: "CabinetGrotesk-Bold";
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
 }
+
 
 .modal__input {
     display: block;
@@ -53,6 +75,10 @@
     border-left: #fff;
     border-bottom: 1px solid rgba(0, 0, 0);
     padding: 8px 0 0 0;
+}
+
+.modal__legend {
+    padding: 0 0 12px 0;
 }
 
 .modal__radio-btns {
@@ -66,6 +92,25 @@
     accent-color: #000000;
 }
 
+.modal__label_type_radio {
+    padding: 0 0 8px 0;
+  }
+
 .modal__label {
     margin: 0 0 24px 0;
 }
+
+.modal__label_type_radio {
+    margin: 0; 
+}
+
+.modal__submit {
+    width: 124px;
+    height: 36px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    margin: 32px 0 0 0;
+    padding: 0;
+  }
