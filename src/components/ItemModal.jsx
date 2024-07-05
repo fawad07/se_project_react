@@ -1,6 +1,6 @@
 import "./ItemModal.css";
 
-function ItemModal(activeModal, card, onModalCloseButtonClick) {
+function ItemModal( {activeModal, card, onModalCloseButtonClick }) {
     return (
         <>
         <div className={`modal ${ activeModal === "preview" ? "modal_opened" : " "}` }>
