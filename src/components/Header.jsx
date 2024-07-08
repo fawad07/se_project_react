@@ -4,7 +4,7 @@ import headerAvatar from '../assets/images/avatar.png';
 import './Header.css';
 
 
-function Header( {onAddButtonClick}) {
+function Header( {onAddButtonClick, weatherInfo}) {
     const currentDate = new Date().toLocaleString('default', { month: 'long', day: 'numeric' });
     console.log(currentDate);                              //debugging statement
 
@@ -13,7 +13,7 @@ function Header( {onAddButtonClick}) {
             <img className="header__logo"
                     src={headerLogo} 
                     alt="App logo" />
-            <p className="header__date-location"> {currentDate} / Location</p>
+            <p className="header__date-location"> {currentDate} / {weatherInfo.city}</p>
             <button type="button"
                           className="header__add-close-btn"
                           onClick={onAddButtonClick  }>+ Add clothes</button>
