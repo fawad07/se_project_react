@@ -35,7 +35,6 @@ useEffect( () => {
   .then( (data) => {
     const filteredData = filterWeatherData(data);
     setWeatherData(filteredData);
-
     console.log(data);   // Debugging statement
    })
   .catch( console.error);

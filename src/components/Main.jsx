@@ -6,9 +6,9 @@ import { defaultClothingItems } from '../utils/constants.js';
 function Main( {data, handleCardClick}) {
     return (
         <main>
-            <WeatherCard></WeatherCard>
+            <WeatherCard weatherInfo={data}></WeatherCard>
             <section className="cards">
-                <p className="cards__text">Today is 75 &deg; F / You want to wear:</p>
+                <p className="cards__text">Today is { data.temp.F} &deg; F / You want to wear:</p>
                 <ul className="cards__list">
                     { defaultClothingItems.filter( (item) => {
                         return item.weather === data.type;
