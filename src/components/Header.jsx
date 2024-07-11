@@ -6,7 +6,7 @@ import './Header.css';
 
 function Header( {onAddButtonClick, weatherInfo}) {
     const currentDate = new Date().toLocaleString('default', { month: 'long', day: 'numeric' });
-    console.log(currentDate);                              //debugging statement
+   // console.log(currentDate);                              //debugging statement
 
     return (
         <header className="header">

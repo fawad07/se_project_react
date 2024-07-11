@@ -2,7 +2,7 @@ import "./ItemCard.css";
 
 
 function ItemCard( { props, onCardClick }) {
-   console.log(props.name);            //debugging statement
+  // console.log(props.name);            //debugging statement
    const cardClickPreview = () => {
     onCardClick(props);
    }
