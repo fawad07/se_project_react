@@ -4,7 +4,7 @@ function Footer() {
   return (
     <footer className="footer">
       <p className="footer__author">Production of Muhammad Fawad Aleem</p>
-      <p className="footer__date"> 2024</p>
+      <p className="footer__date"> &copy; 2024</p>
     </footer>
   );
 }

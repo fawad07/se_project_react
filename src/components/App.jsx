@@ -5,6 +5,7 @@ import Header from "./Header";
 import Main from "./Main";
 import ModalWithForm from "./ModalWithForm";
 import ItemModal from './ItemModal';
+import Footer from './Footer';
 import { getWeather, filterWeatherData } from '../utils/weatherApi';
 import { coordinates, APIkey } from '../utils/constants';
 
@@ -47,6 +48,7 @@ useEffect( () => {
         <Header onAddButtonClick={ addButtonClick } weatherInfo={weatherData}></Header>
         <Main data={weatherData} handleCardClick={cardClick}></Main>
        </div>
+       <Footer></Footer>
        <ModalWithForm 
              titleText="New Garment" 
              buttonText="Add Garment" 
