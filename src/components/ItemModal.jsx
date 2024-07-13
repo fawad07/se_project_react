@@ -2,7 +2,6 @@ import "./ItemModal.css";
 
 function ItemModal( {activeModal, card, onModalCloseButtonClick }) {
     return (
-        <>
         <div className={`modal ${ activeModal === "preview" ? "modal_opened" : " "}` }>
             <div className="modal__content modal__content_type-image">
                 <button type="button"
@@ -16,7 +15,6 @@ function ItemModal( {activeModal, card, onModalCloseButtonClick }) {
                 </div>
             </div>
         </div>
-        </>
     )
 }
 

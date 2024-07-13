@@ -2,7 +2,6 @@ import "./ModalWithForm.css";
 
 function ModalWithForm ({ children, buttonText, titleText, activeModal, onModalCloseButtonClick }) {
     return (
-        <>
         <div className={`modal ${ activeModal === "Add-Garment" ? "modal_opened" : " "}` }>
             <div className="modal__content">
             <h2 className="modal__title">{ titleText }</h2>
@@ -17,7 +16,6 @@ function ModalWithForm ({ children, buttonText, titleText, activeModal, onModalC
             </form>
             </div>
         </div>
-        </>
     )
 }
 
