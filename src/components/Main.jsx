@@ -4,6 +4,7 @@ import ItemCard from './ItemCard.jsx';
 import { defaultClothingItems } from '../utils/constants.js';
 
 function Main( {data, handleCardClick}) {
+    console.log(data);      //debugginf Statement
     return (
         <main>
             <WeatherCard weatherData={data}></WeatherCard>
