@@ -33,36 +33,37 @@ export const weatherOptions = [
 	{
 		day: false,
 		condition: "clear",
-		url: new URL("../assets/images/day/clearNight.svg", import.meta.url)
+		url: new URL("../assets/images/night/clearNight.svg", import.meta.url)
 			.href,
 	},
 	{
 		day: false,
-		condition: "cloudy",
-		url: new URL("../assets/images/day/cloudyNight.svg", import.meta.url)
+		condition: "clouds",
+		url: new URL("../assets/images/night/cloudyNight.svg", import.meta.url)
 			.href,
 	},
 	{
 		day: false,
 		condition: "fog",
-		url: new URL("../assets/images/day/fogNight.svg", import.meta.url).href,
+		url: new URL("../assets/images/night/fogNight.svg", import.meta.url)
+			.href,
 	},
 	{
 		day: false,
 		condition: "rain",
-		url: new URL("../assets/images/day/rainNight.svg", import.meta.url)
+		url: new URL("../assets/images/night/rainNight.svg", import.meta.url)
 			.href,
 	},
 	{
 		day: false,
 		condition: "snow",
-		url: new URL("../assets/images/day/snowNight.svg", import.meta.url)
+		url: new URL("../assets/images/night/snowNight.svg", import.meta.url)
 			.href,
 	},
 	{
 		day: false,
 		condition: "storm",
-		url: new URL("../assets/images/day/stormNight.svg", import.meta.url)
+		url: new URL("../assets/images/night/stormNight.svg", import.meta.url)
 			.href,
 	},
 ];
@@ -112,15 +113,8 @@ export const coordinates = {
 	longitude: -122.03107,
 	*/
 
-	
 	latitude: -36.848461,
 	longitude: 174.763336,
-	
-
-	/*
-	latitude: 31.5497,
-	longitude: 74.3436,
-	*/
 };
 
 export const APIkey = "4beade79c7d8309144e05efa5d109c03";
