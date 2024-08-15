@@ -1,7 +1,7 @@
 //Header.jsx
 import headerLogo from "../assets/images/logo.svg";
 import headerAvatar from "../assets/images/avatar.png";
-import toggleSwitch from "./ToggleSwitch";
+import ToggleSwitch from "./ToggleSwitch";
 import "./Header.css";
 
 function Header({ onAddButtonClick, weatherInfo }) {
@@ -18,9 +18,7 @@ function Header({ onAddButtonClick, weatherInfo }) {
 				{" "}
 				{currentDate} / {weatherInfo.city}
 			</p>
-
-            <toggleSwitch>Toggle Switch</toggleSwitch>
-			
+            <ToggleSwitch>Toggle Switch</ToggleSwitch>
             <button
 				type="button"
 				className="header__add-close-btn"
