@@ -32,7 +32,6 @@
     position: absolute;
     top: -12px;
     left: 35px;
-    font-size: 20px;
     line-height: 17.36px;
     color: #f3f3f3;
   }
@@ -46,8 +45,11 @@
     position: absolute;
     top: -12px;
     left: 4px;
-    font-size: 20px;
     line-height: 17.36px;
-    font-weight: 700px;
     color: #f3f3f3;
+  }
+
+  .switch__active{
+    color: #FFFFFF;
+    font-size: 20px;
   }
