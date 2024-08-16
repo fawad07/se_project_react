@@ -18,12 +18,13 @@ function Header({ onAddButtonClick, weatherInfo }) {
 				{" "}
 				{currentDate} / {weatherInfo.city}
 			</p>
-            <ToggleSwitch>Toggle Switch</ToggleSwitch>
-            <button
+			<ToggleSwitch>Toggle Switch</ToggleSwitch>
+			<button
 				type="button"
 				className="header__add-close-btn"
 				onClick={onAddButtonClick}
-			>+ Add clothes
+			>
+				+ Add clothes
 			</button>
 			<div className="header__user-container">
 				<p className="header__username">Place holder</p>
