@@ -3,8 +3,7 @@ import React from "react";
 
 import "./ToggleSwitch.css";
 
-/*const ToggleSwitch = () => */
-function ToggleSwitch(){
+function ToggleSwitch() {
 	console.log("Toggle");
 
 	const [currentTemperatureUnit, setToggleSwitch] = useState("C");
@@ -45,6 +44,6 @@ function ToggleSwitch(){
 			</p>
 		</label>
 	);
-};
+}
 
 export default ToggleSwitch;
