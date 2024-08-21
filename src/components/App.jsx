@@ -20,6 +20,10 @@ function App() {
 	const [selectedCard, setSelectedCard] = useState({});
 	const [currentTemperatureUnit, setCurrentTemperatureUnit] = useState("F");
 
+	console.log(
+		`Inside App Component, CurrentTempUnit: ${currentTemperatureUnit}`
+	); //debugging
+
 	const addButtonClick = () => {
 		setActiveModal("Add-Garment");
 	};
@@ -44,11 +48,13 @@ function App() {
 
 	const handleToggleSwitchChange = () => {
 		console.log("TODO");
+		if (currentTemperatureUnit === "C") setCurrentTemperatureUnit("F");
+		if (currentTemperatureUnit === "F") setCurrentTemperatureUnit("C");
 	};
 
 	return (
 		<>
-			<CurrentTemperatureUnitContext
+			<CurrentTemperatureUnitContext.Provider
 				value={{ currentTemperatureUnit, handleToggleSwitchChange }}
 			>
 				<div className="page">
@@ -133,7 +139,7 @@ function App() {
 						onModalCloseButtonClick={closeActiveModal}
 					/>
 				</div>
-			</CurrentTemperatureUnitContext>
+			</CurrentTemperatureUnitContext.Provider>
 		</>
 	);
 }
