@@ -46,8 +46,8 @@ function App() {
 			.catch(console.error);
 	}, []);
 
-	const handleToggleSwitchChange = () => {
-		console.log("TODO");
+	const handleToggleSwitch = () => {
+		console.log("Inside App.jsx handleToggleSwitch");
 		if (currentTemperatureUnit === "C") setCurrentTemperatureUnit("F");
 		if (currentTemperatureUnit === "F") setCurrentTemperatureUnit("C");
 	};
@@ -55,7 +55,7 @@ function App() {
 	return (
 		<>
 			<CurrentTemperatureUnitContext.Provider
-				value={{ currentTemperatureUnit, handleToggleSwitchChange }}
+				value={{ currentTemperatureUnit, handleToggleSwitch }}
 			>
 				<div className="page">
 					<div className="page_content">
