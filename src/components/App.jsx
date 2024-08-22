@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import {  Switch, Route } from "react-router-dom";
 
 import "./App.css";
 import Header from "./Header";
@@ -64,8 +65,23 @@ function App() {
 							onAddButtonClick={addButtonClick}
 							weatherInfo={weatherData}
 						/>
-						<Main data={weatherData} handleCardClick={cardClick} />
+						<Switch>
+							{/*HOME ROUTE */}
+							{/*<Route path="/" element={<Main data={weatherData} handleCardClick={cardClick} />} />*/}
+							<Route path="/">
+								<Main
+									data={weatherData}
+									handleCardClick={cardClick}
+								/>
+							</Route>
+
+							{/*PROFILE ROUTE */}
+							<Route path="/profile">
+								<p>PROFILE ROUTE - Debugging</p>
+							</Route>
+						</Switch>
 					</div>
+
 					<Footer />
 					<ModalWithForm
 						titleText="New Garment"
