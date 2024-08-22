@@ -21,6 +21,8 @@ export const filterWeatherData = (data) => {
 	result.type = getWeatherType(result.temp.F);
 	result.weatherCondition = data.weather[0].main.toLowerCase();
 	result.isDay = isDay(data.sys, Date.now());
+
+	console.log(result.temp); //debugging statement
 	return result;
 };
 
