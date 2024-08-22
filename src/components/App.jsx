@@ -68,7 +68,7 @@ function App() {
 						<Switch>
 							{/*HOME ROUTE */}
 							{/*<Route path="/" element={<Main data={weatherData} handleCardClick={cardClick} />} />*/}
-							<Route path="/">
+							<Route exact path="/">
 								<Main
 									data={weatherData}
 									handleCardClick={cardClick}
