@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import {  Routes, Route } from "react-router-dom";
+//import {  Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import "./App.css";
 import Header from "./Header";
@@ -65,7 +66,7 @@ function App() {
 							onAddButtonClick={addButtonClick}
 							weatherInfo={weatherData}
 						/>
-						<Routes>
+						<Switch>
 							{/*HOME ROUTE */}
 							{/*<Route path="/" element={<Main data={weatherData} handleCardClick={cardClick} />} />*/}
 							<Route exact path="/">
@@ -79,7 +80,7 @@ function App() {
 							<Route path="/profile">
 								<p>PROFILE ROUTE - Debugging</p>
 							</Route>
-						</Routes>
+						</Switch>
 					</div>
 
 					<Footer />
