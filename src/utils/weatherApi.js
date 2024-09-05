@@ -22,7 +22,7 @@ export const filterWeatherData = (data) => {
 	result.weatherCondition = data.weather[0].main.toLowerCase();
 	result.isDay = isDay(data.sys, Date.now());
 
-	console.log(result.temp); //debugging statement
+	//console.log(result.temp); //debugging statement
 	return result;
 };
 

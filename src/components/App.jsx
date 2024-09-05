@@ -23,11 +23,11 @@ function App() {
 	const [activeModal, setActiveModal] = useState("");
 	const [selectedCard, setSelectedCard] = useState({});
 	const [currentTemperatureUnit, setCurrentTemperatureUnit] = useState("F");
-
+/*
 	console.log(
 		`Inside App Component, CurrentTempUnit: ${currentTemperatureUnit}`
 	); //debugging
-
+*/
 	const addButtonClick = () => {
 		setActiveModal("Add-Garment");
 	};
@@ -45,7 +45,7 @@ function App() {
 		getWeather(coordinates, APIkey)
 			.then((data) => {
 				const filteredData = filterWeatherData(data);
-				console.log(filteredData); //debugging statement
+				//console.log(filteredData); //debugging statement
 				setWeatherData(filteredData);
 			})
 			.catch(console.error);
@@ -57,9 +57,12 @@ function App() {
 		if (currentTemperatureUnit === "F") setCurrentTemperatureUnit("C");
 	};
 
-	const handleonAddItem = (e) => (
-		console.log(`Inside on Add Item Func\n${e}`)
-	);
+	const handleOnAddItem = (values) => {
+		//e.preventDefault();
+		console.log(values);
+		//console.log(`Inside On add Item func\n${e}\n${e.target}`);
+	}
+
 
 	return (
 		<>
@@ -90,11 +93,14 @@ function App() {
 					</div>
 
 					<Footer />
+					
+					
 					<AddItemModal 
 						onModalCloseButtonClick={closeActiveModal}
-						isOpen={activeModal} 
-						onAddItem={handleonAddItem}
+						activeModal={activeModal} 
+						onAddItem={handleOnAddItem}
 					/>
+					
 					<ItemModal
 						activeModal={activeModal}
 						card={selectedCard}

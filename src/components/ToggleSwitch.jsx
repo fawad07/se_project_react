@@ -19,9 +19,13 @@ function ToggleSwitch() {
 	const { currentTemperatureUnit, handleToggleSwitch } = useContext(
 		CurrentTemperatureUnitContext
 	);
+
+/*
 	console.log(
 		`inside Toggle swich component, currentTemperatureUnit: ${currentTemperatureUnit}`
 	);
+*/
+
 	return (
 		<label className="toggle__switch">
 			<input
