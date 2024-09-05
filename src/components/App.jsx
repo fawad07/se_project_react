@@ -12,7 +12,8 @@ import { getWeather, filterWeatherData } from "../utils/weatherApi";
 import { coordinates, APIkey } from "../utils/constants";
 import { CurrentTemperatureUnitContext } from "../contexts/CurrentTemperatureUnitContext";
 import AddItemModal from "./AddItemModal";
-
+import Profile from "./Profile";
+import SideBar from "./SideBar";
 
 function App() {
 	const [weatherData, setWeatherData] = useState({
@@ -87,7 +88,7 @@ function App() {
 
 							{/*PROFILE ROUTE */}
 							<Route path="/profile">
-								<p>PROFILE ROUTE - Debugging</p>
+								<Profile handleCardClick={cardClick}/>
 							</Route>
 						</Switch>
 					</div>
