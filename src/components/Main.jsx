@@ -13,7 +13,7 @@ function Main({ data, handleCardClick }) {
 	const { currentTemperatureUnit } = useContext(
 		CurrentTemperatureUnitContext
 	);
-	const temp = data?.temp?.[currentTemperatureUnit] || 999;
+	const temp = data?.temp?.[currentTemperatureUnit] || 99;
 
 
 	return (
