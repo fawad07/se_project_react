@@ -34,12 +34,13 @@ function Header({ onAddButtonClick, weatherInfo }) {
 			<div className="header__user-container">
 				<Link className="header__username" to="/profile">
 					Place holder
-				</Link>
-				<img
+					<img
 					src={headerAvatar}
 					alt="user name"
 					className="header__avatar"
 				/>
+				</Link>
+				
 			</div>
 		</header>
 	);
