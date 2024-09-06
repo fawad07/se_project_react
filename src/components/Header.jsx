@@ -32,7 +32,7 @@ function Header({ onAddButtonClick, weatherInfo }) {
 				+ Add clothes
 			</button>
 			<div className="header__user-container">
-				<Link className="header__username" to="/profile">
+				<Link className="header__username header__link" to="/profile">
 					Place holder
 					<img
 					src={headerAvatar}
