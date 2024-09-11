@@ -14,6 +14,7 @@ import { CurrentTemperatureUnitContext } from "../contexts/CurrentTemperatureUni
 import AddItemModal from "./AddItemModal";
 import Profile from "./Profile";
 import SideBar from "./SideBar";
+import { getItems } from "../utils/api";
 
 function App() {
 	const [weatherData, setWeatherData] = useState({
@@ -24,6 +25,7 @@ function App() {
 	const [activeModal, setActiveModal] = useState("");
 	const [selectedCard, setSelectedCard] = useState({});
 	const [currentTemperatureUnit, setCurrentTemperatureUnit] = useState("F");
+	const [clothingItems, setClothingItems] = useState([]);
 /*
 	console.log(
 		`Inside App Component, CurrentTempUnit: ${currentTemperatureUnit}`
@@ -51,6 +53,17 @@ function App() {
 			})
 			.catch(console.error);
 	}, []);
+
+	useEffect(() => {
+		getItems()
+		.then((data) => {
+			console.log(`inside useEffect getitems call:\n${data}`);
+			setClothingItems(data);
+		})
+		.catch(console.error);
+	}, []);
+
+
 
 	const handleToggleSwitch = () => {
 		console.log("Inside App.jsx handleToggleSwitch");
@@ -83,12 +96,15 @@ function App() {
 								<Main
 									data={weatherData}
 									handleCardClick={cardClick}
+									clothingItems={clothingItems}
 								/>
 							</Route>
 
 							{/*PROFILE ROUTE */}
 							<Route path="/profile">
-								<Profile handleCardClick={cardClick}/>
+								<Profile 
+									handleCardClick={cardClick}
+									clothingItems={clothingItems}/>
 							</Route>
 						</Switch>
 					</div>

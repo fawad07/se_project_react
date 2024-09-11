@@ -3,7 +3,7 @@ import ItemCard from "./ItemCard.jsx";
 
 import "./ClothesSection.css";
 
-function ClothesSection({ handleCardClick }) {
+function ClothesSection({ handleCardClick, clothingItems }) {
     return (
         <div className="clothes-section">
             <div className="clothes-section__data">
@@ -13,7 +13,7 @@ function ClothesSection({ handleCardClick }) {
 
             <div className="clothes-section__list">
                 <ul className="cards__list">
-                {defaultClothingItems
+                {clothingItems
                 /*
                     .filter((item) => {
                         return item.weather === data.type;
@@ -25,6 +25,7 @@ function ClothesSection({ handleCardClick }) {
                                 key={item._id}
                                 props={item}
                                 onCardClick={handleCardClick}
+                                clothingItems={clothingItems}
                             ></ItemCard>
                         );
                     })}

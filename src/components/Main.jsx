@@ -8,7 +8,7 @@ import { defaultClothingItems } from "../utils/constants.js";
 import { CurrentTemperatureUnitContext } from "../contexts/CurrentTemperatureUnitContext";
 
 
-function Main({ data, handleCardClick }) {
+function Main({ data, handleCardClick, clothingItems }) {
 	//console.log(data);      //debugginf Statement
 	const { currentTemperatureUnit } = useContext(
 		CurrentTemperatureUnitContext
@@ -24,7 +24,7 @@ function Main({ data, handleCardClick }) {
 					Today is {temp} &deg;{ currentTemperatureUnit }  You want to wear:
 				</p>
 				<ul className="cards__list">
-					{defaultClothingItems
+					{clothingItems
 						.filter((item) => {
 							return item.weather === data.type;
 						})
@@ -34,6 +34,7 @@ function Main({ data, handleCardClick }) {
 									key={item._id}
 									props={item}
 									onCardClick={handleCardClick}
+									clothingItems={clothingItems}
 								></ItemCard>
 							);
 						})}
