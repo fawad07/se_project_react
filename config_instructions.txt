@@ -20,3 +20,9 @@ SETTING UP PROJECT
 
 16. entry point main.jsx, inside <React.strictMode> <App/> </React.StrictMode>
 17. most work done inside App.jsx, inside the funtion App() { ..... return ( <> ....... </> ) }
+
+SETTING UP LOCAL SERVER
+1. Take db.json file from project or similar file and add it in the root directory.
+2. Sudo npm install -g json-server@^0
+3. Run the following to start server:
+	json-server --watch [ fileName ] --id _id --port 3001

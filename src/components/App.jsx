@@ -14,7 +14,7 @@ import { CurrentTemperatureUnitContext } from "../contexts/CurrentTemperatureUni
 import AddItemModal from "./AddItemModal";
 import Profile from "./Profile";
 import SideBar from "./SideBar";
-import { getItems } from "../utils/api";
+import { getItems, addItem, deleteItem } from "../utils/api";
 
 function App() {
 	const [weatherData, setWeatherData] = useState({
@@ -75,6 +75,14 @@ function App() {
 		//e.preventDefault();
 		console.log(values);
 		//console.log(`Inside On add Item func\n${e}\n${e.target}`);
+		addItem(values)
+		.then((newItem) => {
+			setClothingItems([newItem, clothingItems]);
+			closeActiveModal();
+		})
+		.catch((err) => {
+			console.log(err);
+		});
 	}
 
 

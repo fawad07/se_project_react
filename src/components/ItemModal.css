@@ -23,3 +23,15 @@
     margin: 0;
     padding: 20px 0px 32px 32px;
   }
+
+  .modal__delete-button {
+    position: relative;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #ff4d00;
+    border: 0;
+    background-color: #fff;
+    cursor: pointer;
+    padding: 20px 0 32px 32px;
+  }
