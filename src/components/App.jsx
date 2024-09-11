@@ -57,8 +57,9 @@ function App() {
 	useEffect(() => {
 		getItems()
 		.then((data) => {
-			console.log(`inside useEffect getitems call:\n${data}`);
 			setClothingItems(data);
+			console.log(`inside useEffect getitems call:\n${data}`);
+			
 		})
 		.catch(console.error);
 	}, []);
@@ -89,7 +90,7 @@ function App() {
 		deleteItem(id)
 		  .then(() => {
 			setClothingItems((items) => items.filter((item) => item._id !== id));
-			closeModal();
+			closeActiveModal();
 		  })
 		  .catch((err) => console.log(err));
 	  };

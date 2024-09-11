@@ -23,24 +23,26 @@ function Header({ onAddButtonClick, weatherInfo }) {
 				{" "}
 				{currentDate} / {weatherInfo.city}
 			</p>
-			<ToggleSwitch>Toggle Switch</ToggleSwitch>
-			<button
-				type="button"
-				className="header__add-close-btn"
-				onClick={onAddButtonClick}
-			>
-				+ Add clothes
-			</button>
-			<div className="header__user-container">
-				<Link className="header__username header__link" to="/profile">
-					Place holder
-					<img
-					src={headerAvatar}
-					alt="user name"
-					className="header__avatar"
-				/>
-				</Link>
-				
+			<div className="header__grid-container">
+				<ToggleSwitch>Toggle Switch</ToggleSwitch>
+				<button
+					type="button"
+					className="header__add-close-btn"
+					onClick={onAddButtonClick}
+				>
+					+ Add clothes
+				</button>
+
+				<div className="header__user-container">
+					<Link className="header__username header__link" to="/profile">
+						Place holder
+						<img
+						src={headerAvatar}
+						alt="user name"
+						className="header__avatar"
+					/>
+					</Link>
+				</div>
 			</div>
 		</header>
 	);

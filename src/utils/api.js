@@ -30,7 +30,7 @@ function addItem( {name, weather, imageUrl} ){
 }
 
 function deleteItem(id){
-    return fetch(`${baseUrl}/items`, {
+    return fetch(`${baseUrl}/items/${id}`, {
         method: "DELETE",
         headers: {
             "Content-Type": "application/json"
