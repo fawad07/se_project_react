@@ -34,8 +34,7 @@
   font-weight: 700;
   line-height: 24.8px;
   text-align: left;
-  border: solid;
-  border-radius: 10px;
+  border: none;
   cursor: pointer;
   background-color: transparent;
   padding: 0;

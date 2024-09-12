@@ -28,11 +28,13 @@
 
 .header__grid-container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* Three equal-width columns */
-    grid-template-rows: auto; /* Single row */
-    gap: 20px; /* Space between grid items */
-    align-items: center; /* Center items vertically within the grid */
-    /*flex: 1; /Allow the grid container to grow and fill available space */
+    flex: 1; /*Allow the grid container to grow and fill available space */
+    justify-content: end; /* Right-align the grid items */ 
+    grid-template-columns: auto auto auto; /* Three columns */
+
+    grid-template-rows: auto; 
+    gap: 20px; 
+    align-items: center;
 }
 
 .header__username{
