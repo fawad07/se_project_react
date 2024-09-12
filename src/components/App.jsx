@@ -122,7 +122,8 @@ function App() {
 							<Route path="/profile">
 								<Profile 
 									handleCardClick={cardClick}
-									clothingItems={clothingItems}/>
+									clothingItems={clothingItems}
+									handleAddClick={addButtonClick}/>
 							</Route>
 						</Switch>
 					</div>
