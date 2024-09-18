@@ -78,7 +78,7 @@ function App() {
 		//console.log(`Inside On add Item func\n${e}\n${e.target}`);
 		addItem(values)
 		.then((newItem) => {
-			setClothingItems([newItem, clothingItems]);
+			setClothingItems([newItem, ...clothingItems]);
 			closeActiveModal();
 		})
 		.catch((err) => {
