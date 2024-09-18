@@ -58,7 +58,7 @@ function App() {
 		getItems()
 		.then((data) => {
 			setClothingItems(data);
-			console.log(`inside useEffect getitems call:\n${data}`);
+			//console.log(`inside useEffect getitems call:\n${data}`);
 			
 		})
 		.catch(console.error);
