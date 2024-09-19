@@ -75,7 +75,7 @@ function App() {
 	const handleOnAddItem = (values) => {
 		//e.preventDefault();
 		console.log(values);
-		//console.log(`Inside On add Item func\n${e}\n${e.target}`);
+		console.log(`Inside On add Item func\n`,values);	//debugging
 		addItem(values)
 		.then((newItem) => {
 			setClothingItems([newItem, ...clothingItems]);

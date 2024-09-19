@@ -87,6 +87,43 @@
       "name": "Cap",
       "weather": "Hot",
       "_id": 17
+    },
+    {
+      "name": "sdfrjuyyerf",
+      "weather": "Warm",
+      "_id": 18
+    },
+    {
+      "name": "Cap",
+      "weather": "Warm",
+      "_id": 19
+    },
+    {
+      "name": "Cap",
+      "weather": "Hot",
+      "_id": 20
+    },
+    {
+      "name": "Cap",
+      "weather": "Hot",
+      "_id": 21
+    },
+    {
+      "name": "Cap",
+      "weather": "Hot",
+      "url": "https://img.freepik.com/free-photo/isolated-white-cap_125540-1024.jpg",
+      "_id": 22
+    },
+    {
+      "name": "Cap",
+      "weather": "Hot",
+      "_id": 23
+    },
+    {
+      "name": "Cap",
+      "weather": "Hot",
+      "imageUrl": "https://img.freepik.com/free-photo/isolated-white-cap_125540-1024.jpg",
+      "_id": 24
     }
   ]
 }

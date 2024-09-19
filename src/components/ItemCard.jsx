@@ -5,7 +5,8 @@ function ItemCard( { props, onCardClick }) {
   // console.log(props.name);            //debugging statement
    const cardClickPreview = () => {
     onCardClick(props);
-    console.log(props);     //debugging
+    //console.log(`inside item card func:`, props);     //debugging
+    //console.log(props.imageUrl);    //debugging
    }
 
   return ( 
