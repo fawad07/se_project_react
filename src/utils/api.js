@@ -14,7 +14,7 @@ function getItems() {
             "Content-Type": "application/json"
         }
     })
-    .then(checkResponse)
+    .then(checkResponse);
 }
 
 function addItem( {name, weather, imageUrl} ){
@@ -29,9 +29,7 @@ function addItem( {name, weather, imageUrl} ){
             imageUrl
         })
     })
-    .then((res) => {
-        return res.ok ? res.json() : Promise.reject(`Error: ${res.status}`)    
-    });
+    .then(checkResponse);
 }
 
 function deleteItem(id){
@@ -41,9 +39,7 @@ function deleteItem(id){
             "Content-Type": "application/json"
         }
     })
-    .then((res) => {
-        return res.ok ? res.json() : Promise.reject(`Error: ${res.status}`)    
-    });
+    .then(checkResponse);
 }
 
 export { getItems, addItem, deleteItem };
