@@ -10,24 +10,26 @@ const AddItemModal = ( {onModalCloseButtonClick, activeModal, onAddItem}) => {
     const [ weather, setWeather ] = useState('');
 
     const handleNameChange = (e) => {
-        console.log(e.target.value);
+        console.log(e.target.value);    //debugging
         setName(e.target.value);
     };
 
     const handleUrlChange = (e) => {
-        console.log(e.target.value);
+        console.log(e.target.value);    //debugging
         setImageUrl(e.target.value);
     };
 
     const handleWeatherChange = (e) => {
-        console.log(e.target.value);
+        console.log(e.target.value);    //debugging
         setWeather(e.target.value);
     };
 
     const handleOnSubmit = (e) => {
         e.preventDefault();
         onAddItem({ name, imageUrl, weather });
-        //onModalCloseButtonClick();
+        setName(' ');
+        setImageUrl(' ');
+        setWeather(' ');
     };
 
     return(
@@ -74,7 +76,7 @@ const AddItemModal = ( {onModalCloseButtonClick, activeModal, onAddItem}) => {
                         className="modal__radio-input"
                         id="hot"
                         name="radio"
-                        value="Hot"
+                        value="hot"
                         onChange={handleWeatherChange}
                     />
                     Hot
@@ -88,7 +90,7 @@ const AddItemModal = ( {onModalCloseButtonClick, activeModal, onAddItem}) => {
                         className="modal__radio-input"
                         id="warm"
                         name="radio"
-                        value="Warm"
+                        value="warm"
                         onChange={handleWeatherChange}
                     />
                     Warm
@@ -102,7 +104,7 @@ const AddItemModal = ( {onModalCloseButtonClick, activeModal, onAddItem}) => {
                         className="modal__radio-input"
                         id="cold"
                         name="radio"
-                        value="Cold"
+                        value="cold"
                         onChange={handleWeatherChange}
                     />
                     Cold

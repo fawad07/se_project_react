@@ -89,16 +89,6 @@
       "_id": 17
     },
     {
-      "name": "sdfrjuyyerf",
-      "weather": "Warm",
-      "_id": 18
-    },
-    {
-      "name": "Cap",
-      "weather": "Warm",
-      "_id": 19
-    },
-    {
       "name": "Cap",
       "weather": "Hot",
       "_id": 20
@@ -130,6 +120,30 @@
       "weather": "Hot",
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Baseball_cap.jpg",
       "_id": 25
+    },
+    {
+      "name": "cap",
+      "weather": "hot",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Baseball_cap.jpg",
+      "_id": 26
+    },
+    {
+      "name": "qawsedrfdgsyw",
+      "weather": "hot",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Baseball_cap.jpg",
+      "_id": 27
+    },
+    {
+      "name": "qawsedrfdgsyw",
+      "weather": "warm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Baseball_cap.jpg",
+      "_id": 28
+    },
+    {
+      "name": "cdewsxza",
+      "weather": "warm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Baseball_cap.jpg",
+      "_id": 29
     }
   ]
 }
