@@ -74,7 +74,6 @@ function App() {
 
 	const handleOnAddItem = (values) => {
 		//e.preventDefault();
-		console.log(values);
 		console.log(`Inside On add Item func\n`,values);	//debugging
 		addItem(values)
 		.then((newItem) => {
@@ -82,7 +81,7 @@ function App() {
 			closeActiveModal();
 		})
 		.catch((err) => {
-			console.log(err);
+			console.error(err);
 		});
 	}
 
@@ -92,60 +91,58 @@ function App() {
 			setClothingItems((items) => items.filter((item) => item._id !== id));
 			closeActiveModal();
 		  })
-		  .catch((err) => console.log(err));
+		  .catch((err) => console.error(err));
 	  };
 
 
 	return (
-		<>
-			<CurrentTemperatureUnitContext.Provider
-				value={{ currentTemperatureUnit, handleToggleSwitch }}
-			>
-				<div className="page">
-					<div className="page_content">
-						<Header
-							onAddButtonClick={addButtonClick}
-							weatherInfo={weatherData}
-						/>
-						<Switch>
-							{/*HOME ROUTE */}
-							{/*<Route path="/" element={<Main data={weatherData} handleCardClick={cardClick} />} />*/}
-							<Route exact path="/">
-								<Main
-									data={weatherData}
-									handleCardClick={cardClick}
-									clothingItems={clothingItems}
-								/>
-							</Route>
-
-							{/*PROFILE ROUTE */}
-							<Route path="/profile">
-								<Profile 
-									handleCardClick={cardClick}
-									clothingItems={clothingItems}
-									handleAddClick={addButtonClick}/>
-							</Route>
-						</Switch>
-					</div>
-
-					<Footer />
-					
-					
-					<AddItemModal 
-						onModalCloseButtonClick={closeActiveModal}
-						activeModal={activeModal} 
-						onAddItem={handleOnAddItem}
+		<CurrentTemperatureUnitContext.Provider
+			value={{ currentTemperatureUnit, handleToggleSwitch }}
+		>
+			<div className="page">
+				<div className="page_content">
+					<Header
+						onAddButtonClick={addButtonClick}
+						weatherInfo={weatherData}
 					/>
-					
-					<ItemModal
-						activeModal={activeModal}
-						card={selectedCard}
-						onModalCloseButtonClick={closeActiveModal}
-						onDeleteItem={handleOnDeleteItem}
-					/>
+					<Switch>
+						{/*HOME ROUTE */}
+						{/*<Route path="/" element={<Main data={weatherData} handleCardClick={cardClick} />} />*/}
+						<Route exact path="/">
+							<Main
+								data={weatherData}
+								handleCardClick={cardClick}
+								clothingItems={clothingItems}
+							/>
+						</Route>
+
+						{/*PROFILE ROUTE */}
+						<Route path="/profile">
+							<Profile 
+								handleCardClick={cardClick}
+								clothingItems={clothingItems}
+								handleAddClick={addButtonClick}/>
+						</Route>
+					</Switch>
 				</div>
-			</CurrentTemperatureUnitContext.Provider>
-		</>
+
+				<Footer />
+				
+				
+				<AddItemModal 
+					onModalCloseButtonClick={closeActiveModal}
+					activeModal={activeModal} 
+					onAddItem={handleOnAddItem}
+				/>
+				
+				<ItemModal
+					activeModal={activeModal}
+					card={selectedCard}
+					onModalCloseButtonClick={closeActiveModal}
+					onDeleteItem={handleOnDeleteItem}
+				/>
+			</div>
+		</CurrentTemperatureUnitContext.Provider>
 	);
 }
 
