@@ -124,6 +124,12 @@
       "weather": "Hot",
       "imageUrl": "https://img.freepik.com/free-photo/isolated-white-cap_125540-1024.jpg",
       "_id": 24
+    },
+    {
+      "name": "cap",
+      "weather": "Hot",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Baseball_cap.jpg",
+      "_id": 25
     }
   ]
 }
