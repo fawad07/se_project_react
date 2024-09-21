@@ -27,9 +27,9 @@ const AddItemModal = ( {onModalCloseButtonClick, activeModal, onAddItem}) => {
     const handleOnSubmit = (e) => {
         e.preventDefault();
         onAddItem({ name, imageUrl, weather });
-        setName(' ');
-        setImageUrl(' ');
-        setWeather(' ');
+        //setName('');
+        //setImageUrl('');
+        //setWeather('');
     };
 
     return(

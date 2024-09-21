@@ -79,71 +79,16 @@
       "imageUrl": "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/wtwr-project/Sweatshirt.png?etag=008a9674757bea2e0bdb31242e364be0"
     },
     {
-      "name": "cap",
-      "weather": "Hot",
-      "_id": 16
-    },
-    {
-      "name": "Cap",
-      "weather": "Hot",
-      "_id": 17
-    },
-    {
-      "name": "Cap",
-      "weather": "Hot",
-      "_id": 20
-    },
-    {
-      "name": "Cap",
-      "weather": "Hot",
-      "_id": 21
-    },
-    {
-      "name": "Cap",
-      "weather": "Hot",
-      "url": "https://img.freepik.com/free-photo/isolated-white-cap_125540-1024.jpg",
-      "_id": 22
-    },
-    {
-      "name": "Cap",
-      "weather": "Hot",
-      "_id": 23
-    },
-    {
       "name": "Cap",
       "weather": "Hot",
       "imageUrl": "https://img.freepik.com/free-photo/isolated-white-cap_125540-1024.jpg",
       "_id": 24
     },
     {
-      "name": "cap",
-      "weather": "Hot",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Baseball_cap.jpg",
+      "name": "jacket",
+      "weather": "cold",
+      "imageUrl": "https://media.istockphoto.com/id/1342121693/photo/blue-sport-winter-jacket-isolated-on-white-warm-clothes.jpg?s=612x612&w=0&k=20&c=l-hDjB6RgtSDSDnqJHOJAQds_2xEBPL9ZncaFQdcVtQ=",
       "_id": 25
-    },
-    {
-      "name": "cap",
-      "weather": "hot",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Baseball_cap.jpg",
-      "_id": 26
-    },
-    {
-      "name": "qawsedrfdgsyw",
-      "weather": "hot",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Baseball_cap.jpg",
-      "_id": 27
-    },
-    {
-      "name": "qawsedrfdgsyw",
-      "weather": "warm",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Baseball_cap.jpg",
-      "_id": 28
-    },
-    {
-      "name": "cdewsxza",
-      "weather": "warm",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Baseball_cap.jpg",
-      "_id": 29
     }
   ]
 }
