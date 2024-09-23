@@ -24,12 +24,16 @@ const AddItemModal = ( {onModalCloseButtonClick, activeModal, onAddItem}) => {
         setWeather(e.target.value);
     };
 
+    const reset = () => {
+        console.log('inside reset add item modal');     //debugging
+        setName('');
+        setImageUrl('');
+        setWeather('');
+    };
+
     const handleOnSubmit = (e) => {
         e.preventDefault();
-        onAddItem({ name, imageUrl, weather });
-        //setName('');
-        //setImageUrl('');
-        //setWeather('');
+        onAddItem({ name, imageUrl, weather }, reset);
     };
 
     return(

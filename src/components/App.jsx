@@ -72,13 +72,14 @@ function App() {
 		if (currentTemperatureUnit === "F") setCurrentTemperatureUnit("C");
 	};
 
-	const handleOnAddItem = (values) => {
+	const handleOnAddItem = (values, reset) => {
 		//e.preventDefault();
 		console.log(`Inside On add Item func\n`,values);	//debugging
 		addItem(values)
 		.then((newItem) => {
 			setClothingItems([newItem, ...clothingItems]);
 			closeActiveModal();
+			reset();
 		})
 		.catch((err) => {
 			console.error(err);
